@@ -3,33 +3,62 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+redirect_from:
+  - /resume
 ---
+
+{% include base_path %}
 
 Education
 ======
-* Ph.D. in Quantum Computing, University of Technology Sydney, 2018
-* B.S. in Computational Mathematics, Sichuan University, 2014
+* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.S. in Jekyll, GitHub University, 2014
+* B.S. in GitHub, GitHub University, 2012
 
-Appointments
+Work experience
 ======
-* Associate Professor, Institute of Software, Chinese Academy of Sciences
+* Spring 2024: Academic Pages Collaborator
+  * GitHub University
+  * Duties includes: Updates and improvements to template
+  * Supervisor: The Users
 
-Research Interests
-======
-* Formal verification and model checking of quantum systems
-* Trustworthy quantum machine learning
-* Quantum privacy and differential privacy
-* Analysis and optimization of noisy quantum circuits
+* Fall 2015: Research Assistant
+  * GitHub University
+  * Duties included: Merging pull requests
+  * Supervisor: Professor Hub
 
-Selected Service
+* Summer 2015: Research Assistant
+  * GitHub University
+  * Duties included: Tagging issues
+  * Supervisor: Professor Git
+  
+Skills
 ======
-* Program Committee Member, CAV 2025 and 2026
-* Program Committee Member, QCNC 2025 and 2026
-* Program Committee Member, IEEE ICC 2026
+* Skill 1
+* Skill 2
+  * Sub-skill 2.1
+  * Sub-skill 2.2
+  * Sub-skill 2.3
+* Skill 3
 
-Links
+Publications
 ======
-* [Google Scholar](https://scholar.google.com/citations?user=muIp5UIAAAAJ&hl=en)
-* [ORCID](https://orcid.org/0000-0002-3490-0029)
-* [DBLP](https://dblp.org/pid/205/2739.html)
-* [ResearchGate](https://www.researchgate.net/profile/Ji-Guan)
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Talks
+======
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul>
+  
+Teaching
+======
+  <ul>{% for post in site.teaching reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
+Service and leadership
+======
+* Currently signed in to 43 different slack teams
